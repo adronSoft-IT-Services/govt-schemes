@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "dev_net": "next dev -H 192.168.1.10",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -14,6 +15,7 @@
     "eslint-config-next": "13.5.2",
     "next": "13.5.2",
     "postcss": "8.4.30",
+    "preline": "^1.9.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "tailwindcss": "3.3.3"
