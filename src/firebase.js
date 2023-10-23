@@ -20,10 +20,10 @@ const fireStore = getFirestore(app);
 async function getSchemes() {
     const q = query(collection(fireStore, "schemes"), where("isActive", "==", true));
     const schemesCollection = await getDocs(q);
-    const allNewSchemes = [];
-    schemesCollection.forEach((scheme) => {
-        allNewSchemes.push(scheme);
-    });
+    const allNewSchemes = schemesCollection;
+    // schemesCollection.forEach((scheme) => {
+    //     allNewSchemes.push(scheme);
+    // });
     return { schemes: allNewSchemes, filters: AllFilters };
     // setSchemes(allNewSchemes);
 }
