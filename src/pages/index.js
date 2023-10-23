@@ -1,4 +1,5 @@
 // import Image from 'next/image'
+'use client';
 
 import BrandLogos from "@/components/_pages/_homepage/BrandLogos";
 import HeroSection from "@/components/_pages/_homepage/HeroSection";
@@ -16,7 +17,8 @@ export default function Home() {
 
       {/* about us */}
       <div className="about-area section-padding-top pb-16 relative z-[1]">
-        <div className=" absolute right-[7%] top-[20%] z-[-1] hidden xl:block"><img src="/images/icon/h.svg" alt="" />
+        <div className=" absolute right-[7%] top-[20%] z-[-1] hidden xl:block">
+          <img src="/images/icon/h.svg" alt="" />
         </div>
         <div className="container">
           <div className="grid grid-cols-12 xl:gap-[70px] lg:gap-10 gap-6">
@@ -103,7 +105,7 @@ export default function Home() {
                       </button>
                     </li>
                     <li>
-                      <button  className="  text-xl leading-[1]  flex h-12 w-12 items-center justify-center text-white ">
+                      <button className="  text-xl leading-[1]  flex h-12 w-12 items-center justify-center text-white ">
                         <iconify-icon icon="bxl:linkedin"></iconify-icon>
                       </button>
                     </li>
@@ -131,17 +133,17 @@ export default function Home() {
                   </button>
                   <ul className=" justify-center bg-primary rounded-tl-md transition-all duration-100 social-explore ">
                     <li>
-                      <button  className=" text-xl leading-[1] text-white  flex h-12 w-12 items-center justify-center">
+                      <button className=" text-xl leading-[1] text-white  flex h-12 w-12 items-center justify-center">
                         <iconify-icon icon="bxl:facebook"></iconify-icon>
                       </button>
                     </li>
                     <li>
-                      <button  className=" text-xl leading-[1] text-white flex h-12 w-12 items-center justify-center">
+                      <button className=" text-xl leading-[1] text-white flex h-12 w-12 items-center justify-center">
                         <iconify-icon icon="bxl:twitter"></iconify-icon>
                       </button>
                     </li>
                     <li>
-                      <button  className="  text-xl leading-[1]  flex h-12 w-12 items-center justify-center text-white ">
+                      <button className="  text-xl leading-[1]  flex h-12 w-12 items-center justify-center text-white ">
                         <iconify-icon icon="bxl:linkedin"></iconify-icon>
                       </button>
                     </li>
@@ -169,17 +171,17 @@ export default function Home() {
                   </button>
                   <ul className=" justify-center bg-primary rounded-tl-md transition-all duration-100 social-explore ">
                     <li>
-                      <button  className=" text-xl leading-[1] text-white  flex h-12 w-12 items-center justify-center">
+                      <button className=" text-xl leading-[1] text-white  flex h-12 w-12 items-center justify-center">
                         <iconify-icon icon="bxl:facebook"></iconify-icon>
                       </button>
                     </li>
                     <li>
-                      <button  className=" text-xl leading-[1] text-white flex h-12 w-12 items-center justify-center">
+                      <button className=" text-xl leading-[1] text-white flex h-12 w-12 items-center justify-center">
                         <iconify-icon icon="bxl:twitter"></iconify-icon>
                       </button>
                     </li>
                     <li>
-                      <button  className="  text-xl leading-[1]  flex h-12 w-12 items-center justify-center text-white ">
+                      <button className="  text-xl leading-[1]  flex h-12 w-12 items-center justify-center text-white ">
                         <iconify-icon icon="bxl:linkedin"></iconify-icon>
                       </button>
                     </li>
@@ -207,17 +209,17 @@ export default function Home() {
                   </button>
                   <ul className=" justify-center bg-primary rounded-tl-md transition-all duration-100 social-explore ">
                     <li>
-                      <button  className=" text-xl leading-[1] text-white  flex h-12 w-12 items-center justify-center">
+                      <button className=" text-xl leading-[1] text-white  flex h-12 w-12 items-center justify-center">
                         <iconify-icon icon="bxl:facebook"></iconify-icon>
                       </button>
                     </li>
                     <li>
-                      <button  className=" text-xl leading-[1] text-white flex h-12 w-12 items-center justify-center">
+                      <button className=" text-xl leading-[1] text-white flex h-12 w-12 items-center justify-center">
                         <iconify-icon icon="bxl:twitter"></iconify-icon>
                       </button>
                     </li>
                     <li>
-                      <button  className="  text-xl leading-[1]  flex h-12 w-12 items-center justify-center text-white ">
+                      <button className="  text-xl leading-[1]  flex h-12 w-12 items-center justify-center text-white ">
                         <iconify-icon icon="bxl:linkedin"></iconify-icon>
                       </button>
                     </li>
@@ -434,7 +436,7 @@ export default function Home() {
                 <div className=" mt-6 mb-12">
                   Learn at your own pace, move the between multiple courses.
                 </div>
-                <button  className="btn btn-primary">Apply Now</button>
+                <button className="btn btn-primary">Apply Now</button>
               </div>
             </div>
             <div className="bg-[url('/images/all-img/bg-ins-2.png')]  bg-no-repeat p-10 bg-cover rounded-md">
@@ -447,7 +449,7 @@ export default function Home() {
                 <div className=" mt-6 mb-12">
                   Learn at your own pace, move the between multiple courses.
                 </div>
-                <button  className="btn btn-black">Contact Us</button>
+                <button className="btn btn-black">Contact Us</button>
               </div>
             </div>
           </div>
@@ -629,14 +631,14 @@ export default function Home() {
                   <Link href="/" className=" group-hover:text-primary transitio duration-150">The Power of Podcast for Storytelling</Link>
                 </h4>
                 <div className="flex   space-x-6">
-                  <Link className=" flex items-center space-x-2" >
+                  <button className=" flex items-center space-x-2" >
                     <img src="/images/svg/calender2.svg" alt="" />
                     <span>21 Feb, 22</span>
-                  </Link>
-                  <Link className=" flex items-center space-x-2" >
+                  </button>
+                  <button className=" flex items-center space-x-2" >
                     <img src="/images/svg/clock2.svg" alt="" />
                     <span>4k Lesson</span>
-                  </Link>
+                  </button>
                 </div>
               </div>
             </div>
