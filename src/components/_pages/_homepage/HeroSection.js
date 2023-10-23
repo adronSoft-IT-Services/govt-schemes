@@ -3,7 +3,7 @@ import React from 'react'
 
 const HeroSection = () => {
   return (
-    <section className="bg-[url('/images/banner/3.png')]  bg-no-repeat bg-center overflow-hidden">
+    <section className="bg-[url('/images/banner/3.png')]  bg-no-repeat bg-center overflow-hidden bg-cover">
       <div className="container relative">
         {/* <div className="xl:max-w-[570px] lg:max-w-[770px] xl:py-[174px] lg:py-28 md:py-20 py-14"> */}
         <div className="xl:max-w-[700px] lg:max-w-[770px] lg:py-40 md:py-20 py-14">

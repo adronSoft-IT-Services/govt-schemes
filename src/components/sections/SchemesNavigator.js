@@ -2,8 +2,10 @@ import Image from "next/image";
 import SchemeCategoryBlock from "../AllComponents/Schemes/SchemeCategoryBlock";
 import SchemesMinistriesBlock from "../AllComponents/Schemes/SchemesMinistriesBlock";
 import SchemeStateBlock from "../AllComponents/Schemes/SchemeStateBlock";
+import { Categories } from "@/data/categories";
 
 export default function SchemesNavigator() {
+    // const schemeCategory = Categories;
     const schemeCategory = [
         {
             name: 'Agriculture, Rural & Environment',

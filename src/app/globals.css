@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('../../public/css/app.css');
-@import url('../../public/css/rt-plugins.css');
-
+@import url("../../public/css/app.css");
+@import url("../../public/css/rt-plugins.css");
+.form-check .form-check-input~.ck-box {
+  height: 20px !important;
+  width: 20px !important;
+}

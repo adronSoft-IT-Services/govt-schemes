@@ -112,7 +112,7 @@ export default function Footer() {
                                         return (
                                             <div key={index}>
                                                 <a href="#" className="group relative block h-20 w-full rounded">
-                                                    <Image src={image} alt="instagram" width={149} height={80} className="block h-full w-full rounded object-cover" />
+                                                    <Image src={image} alt="instagram" width={149} height={80} className="block h-auto w-auto rounded object-cover" />
                                                     <div
                                                         className="absolute left-0 top-0 flex h-full w-full flex-col items-center justify-center rounded bg-black bg-opacity-40 text-3xl text-white opacity-0 transition-all duration-150 group-hover:opacity-100">
                                                         <span className="scale-0 transition-all duration-150 group-hover:scale-100"><iconify-icon
