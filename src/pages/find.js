@@ -1,6 +1,4 @@
-// 'use client';
-
-import { filtersData, getAllSchemes } from "@/firebase";
+import { getAllSchemes } from "@/firebase";
 import SearchPage from "@/components/_pages/find/searchpage";
 
 
