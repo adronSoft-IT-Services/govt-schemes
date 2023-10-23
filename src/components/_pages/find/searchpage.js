@@ -112,7 +112,7 @@ const SearchPage = ({ schemes, filters }) => {
                         <div className="content">
                             <div className="grid grid-cols-1 gap-[30px]">
                                 {filteredSchemes.map((scheme, index) => {
-                                    return (<SchemeSummary state={scheme?.state} title={scheme?.title} summary={scheme?.summary} key={index} />)
+                                    return (<SchemeSummary state={scheme?.state} title={scheme?.title} summary={scheme?.summary} tags={scheme.tags} ministry={scheme.ministry} slug={scheme.id} key={index} />)
                                 })}
                             </div>
                             <div className="text-center pt-14">
