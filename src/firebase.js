@@ -19,7 +19,7 @@ const fireStore = getFirestore(app);
 
 async function getSchemes() {
     // const q = query(collection(fireStore, "schemes"), where("isActive", "==", true));
-    const querySnapshot = await getDocs(collection(fireStore, "schemes"));
+    const querySnapshot = await getDocs(collection(fireStore, "schemes"), where("isActive", true));
     const allNewSchemes = [];
     querySnapshot.forEach((doc) => {
         var newDoc = {
