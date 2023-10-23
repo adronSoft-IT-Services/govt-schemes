@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const HeroSection = () => {
@@ -18,7 +19,7 @@ const HeroSection = () => {
           All government schemes for every Indians with their perfect abilities match.
           </div>
           <div className="md:flex  md:space-x-4 space-y-3 md:space-y-0">
-            <a href="#" className="btn btn-primary">Explore Now</a>
+            <Link href="/find" className="btn btn-primary">Explore Now</Link>
           </div>
         </div>
         <div className="imge-box absolute right-[50px] top-1/2  -translate-y-1/2 hidden xl:block   ">

@@ -16,12 +16,12 @@ export default function Header() {
                                 <Link href="/" className="brand-logo flex justify-center align-center items-center h-[45px] px-2">
                                     <Image src="/images/logo/logo.png" alt="image" width={190} height={25} className="h-auto w-auto" />
                                 </Link>
-                                <a href="https://www.g20.org/en/" target='_blank' className="brand-logo flex justify-center align-center items-center h-[45px] px-2">
+                                <Link href="https://www.g20.org/en/" target='_blank' className="brand-logo flex justify-center align-center items-center h-[45px] px-2">
                                     <Image src="/images/di.png" alt="image" width={70} height={30} className="h-auto w-auto" />
-                                </a>
-                                <a href="https://digitalindia.gov.in/" target='_blank' className="brand-logo flex justify-center align-center items-center h-[45px] px-2">
+                                </Link>
+                                <Link href="https://digitalindia.gov.in/" target='_blank' className="brand-logo flex justify-center align-center items-center h-[45px] px-2">
                                     <Image src="/images/g20_opt.png" alt="image" width={70} height={30} className="h-auto w-auto" />
-                                </a>
+                                </Link>
                             </div>
                             <div className='basis-2/3 justify-end'>
                                 <div className='w-full flex justify-end text-end'>
@@ -30,8 +30,8 @@ export default function Header() {
                                             <path d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z" stroke="currentColor" fill="none" fillRule="evenodd" strokeLinecap="round" strokeLinejoin="round"></path>
                                         </svg>
                                     </Link>
-                                    <a href="#" className="btn btn-black bg-green-500 py-2 px-4">Sign In</a>
-                                    <a href="#" className="btn btn-primary py-2 px-4 ms-2">Register</a>
+                                    <button className="btn btn-black bg-green-500 py-2 px-4">Sign In</button>
+                                    <button className="btn btn-primary py-2 px-4 ms-2">Register</button>
                                 </div>
                             </div>
                         </div>

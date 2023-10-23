@@ -42,35 +42,35 @@ export default function Footer() {
                     <div className="grid grid-cols-12 gap-5">
                         <div className="single-footer col-span-12 lg:col-span-6 xl:col-span-3">
                             <div className="lg:max-w-[270px]">
-                                <a href="#" className="mb-10 block">
+                                <button className="mb-10 block">
                                     {/* <img src="/images/logo/footer-logo-2.svg" alt="" /> */}
                                     {/* <Image src={footerLogo} alt="logo" width={132} height={27} /> */}
                                     <Image src="/images/logo/logo.png" alt="image" width={300} height={40} />
-                                </a>
+                                </button>
                                 <p>
                                     Lorem ipsum amet, consectetur adipiscing elit. Suspendis varius
                                     enim eros elementum tristique. Duis cursus.
                                 </p>
                                 <ul className="flex space-x-4 pt-8">
                                     <li>
-                                        <a href="#" className="flex h-10 w-10">
+                                        <button className="flex h-10 w-10">
                                             <Image src={socialIcons.facebook} alt="facebook" width={40} height={40} />
-                                        </a>
+                                        </button>
                                     </li>
                                     <li>
-                                        <a href="#" className="flex h-10 w-10">
+                                        <button className="flex h-10 w-10">
                                             <Image src={socialIcons.twitter} alt="twitter" width={40} height={40} />
-                                        </a>
+                                        </button>
                                     </li>
                                     <li>
-                                        <a href="#" className="flex h-10 w-10">
+                                        <button className="flex h-10 w-10">
                                             <Image src={socialIcons.pinterest} alt="pinterest" width={40} height={40} />
-                                        </a>
+                                        </button>
                                     </li>
                                     <li>
-                                        <a href="#" className="flex h-10 w-10">
+                                        <button className="flex h-10 w-10">
                                             <Image src={socialIcons.instagram} alt="instagram" width={40} height={40} />
-                                        </a>
+                                        </button>
                                     </li>
                                 </ul>
                             </div>
@@ -81,23 +81,23 @@ export default function Footer() {
                                     <div className="flex-1 lg:flex-none">
                                         <h4 className="mb-8 text-2xl font-bold text-black">Links</h4>
                                         <ul className="list-item space-y-5">
-                                            <li><a href="#">Home</a></li>
-                                            <li><a href="#">About Us</a></li>
-                                            <li><a href="#">Pricing</a></li>
-                                            <li><a href="#">Courses</a></li>
-                                            <li><a href="#">Contact Us</a></li>
-                                            <li><a href="#">Blog</a></li>
+                                            <li><button >Home</button></li>
+                                            <li><button >About Us</button></li>
+                                            <li><button >Pricing</button></li>
+                                            <li><button >Courses</button></li>
+                                            <li><button >Contact Us</button></li>
+                                            <li><button >Blog</button></li>
                                         </ul>
                                     </div>
                                     <div className="flex-1 lg:flex-none">
                                         <h4 className="mb-8 text-2xl font-bold text-black">Legal</h4>
                                         <ul className="list-item space-y-5">
-                                            <li><a href="#">Legal</a></li>
-                                            <li><a href="#">Tearms of Use</a></li>
-                                            <li><a href="#">Tearm & Condition</a></li>
-                                            <li><a href="#">Payment Method</a></li>
-                                            <li><a href="#">Privacy Policy</a></li>
-                                            <li><a href="#">Privacy Policy</a></li>
+                                            <li><button >Legal</button></li>
+                                            <li><button >Tearms of Use</button></li>
+                                            <li><button >Tearm & Condition</button></li>
+                                            <li><button >Payment Method</button></li>
+                                            <li><button >Privacy Policy</button></li>
+                                            <li><button >Privacy Policy</button></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -111,14 +111,14 @@ export default function Footer() {
                                     instagramPostsImage.map((image, index) => {
                                         return (
                                             <div key={index}>
-                                                <a href="#" className="group relative block h-20 w-full rounded">
+                                                <button className="group relative block h-20 w-full rounded">
                                                     <Image src={image} alt="instagram" width={149} height={80} className="block h-auto w-auto rounded object-cover" />
                                                     <div
                                                         className="absolute left-0 top-0 flex h-full w-full flex-col items-center justify-center rounded bg-black bg-opacity-40 text-3xl text-white opacity-0 transition-all duration-150 group-hover:opacity-100">
                                                         <span className="scale-0 transition-all duration-150 group-hover:scale-100"><iconify-icon
                                                             icon="akar-icons:instagram-fill"></iconify-icon></span>
                                                     </div>
-                                                </a>
+                                                </button>
                                             </div>
                                         )
                                     })

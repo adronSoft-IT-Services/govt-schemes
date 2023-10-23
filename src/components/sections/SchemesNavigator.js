@@ -593,7 +593,7 @@ export default function SchemesNavigator() {
                 </div>
 
                 <div className="text-center lg:pt-16 pt-10">
-                    <a href="#" className=" btn btn-primary">View All Schemes</a>
+                    <button className=" btn btn-primary">View All Schemes</button>
                 </div>
             </div>
         </div>

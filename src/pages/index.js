@@ -3,6 +3,7 @@
 import BrandLogos from "@/components/_pages/_homepage/BrandLogos";
 import HeroSection from "@/components/_pages/_homepage/HeroSection";
 import SchemesNavigator from "@/components/sections/SchemesNavigator";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -92,19 +93,19 @@ export default function Home() {
                   </button>
                   <ul className=" justify-center bg-primary rounded-tl-md transition-all duration-100 social-explore ">
                     <li>
-                      <a href="#" className=" text-xl leading-[1] text-white  flex h-12 w-12 items-center justify-center">
+                      <button className=" text-xl leading-[1] text-white  flex h-12 w-12 items-center justify-center">
                         <iconify-icon icon="bxl:facebook"></iconify-icon>
-                      </a>
+                      </button>
                     </li>
                     <li>
-                      <a href="#" className=" text-xl leading-[1] text-white flex h-12 w-12 items-center justify-center">
+                      <button className=" text-xl leading-[1] text-white flex h-12 w-12 items-center justify-center">
                         <iconify-icon icon="bxl:twitter"></iconify-icon>
-                      </a>
+                      </button>
                     </li>
                     <li>
-                      <a href="#" className="  text-xl leading-[1]  flex h-12 w-12 items-center justify-center text-white ">
+                      <button  className="  text-xl leading-[1]  flex h-12 w-12 items-center justify-center text-white ">
                         <iconify-icon icon="bxl:linkedin"></iconify-icon>
-                      </a>
+                      </button>
                     </li>
                   </ul>
                 </div>
@@ -130,19 +131,19 @@ export default function Home() {
                   </button>
                   <ul className=" justify-center bg-primary rounded-tl-md transition-all duration-100 social-explore ">
                     <li>
-                      <a href="#" className=" text-xl leading-[1] text-white  flex h-12 w-12 items-center justify-center">
+                      <button  className=" text-xl leading-[1] text-white  flex h-12 w-12 items-center justify-center">
                         <iconify-icon icon="bxl:facebook"></iconify-icon>
-                      </a>
+                      </button>
                     </li>
                     <li>
-                      <a href="#" className=" text-xl leading-[1] text-white flex h-12 w-12 items-center justify-center">
+                      <button  className=" text-xl leading-[1] text-white flex h-12 w-12 items-center justify-center">
                         <iconify-icon icon="bxl:twitter"></iconify-icon>
-                      </a>
+                      </button>
                     </li>
                     <li>
-                      <a href="#" className="  text-xl leading-[1]  flex h-12 w-12 items-center justify-center text-white ">
+                      <button  className="  text-xl leading-[1]  flex h-12 w-12 items-center justify-center text-white ">
                         <iconify-icon icon="bxl:linkedin"></iconify-icon>
-                      </a>
+                      </button>
                     </li>
                   </ul>
                 </div>
@@ -168,19 +169,19 @@ export default function Home() {
                   </button>
                   <ul className=" justify-center bg-primary rounded-tl-md transition-all duration-100 social-explore ">
                     <li>
-                      <a href="#" className=" text-xl leading-[1] text-white  flex h-12 w-12 items-center justify-center">
+                      <button  className=" text-xl leading-[1] text-white  flex h-12 w-12 items-center justify-center">
                         <iconify-icon icon="bxl:facebook"></iconify-icon>
-                      </a>
+                      </button>
                     </li>
                     <li>
-                      <a href="#" className=" text-xl leading-[1] text-white flex h-12 w-12 items-center justify-center">
+                      <button  className=" text-xl leading-[1] text-white flex h-12 w-12 items-center justify-center">
                         <iconify-icon icon="bxl:twitter"></iconify-icon>
-                      </a>
+                      </button>
                     </li>
                     <li>
-                      <a href="#" className="  text-xl leading-[1]  flex h-12 w-12 items-center justify-center text-white ">
+                      <button  className="  text-xl leading-[1]  flex h-12 w-12 items-center justify-center text-white ">
                         <iconify-icon icon="bxl:linkedin"></iconify-icon>
-                      </a>
+                      </button>
                     </li>
                   </ul>
                 </div>
@@ -206,19 +207,19 @@ export default function Home() {
                   </button>
                   <ul className=" justify-center bg-primary rounded-tl-md transition-all duration-100 social-explore ">
                     <li>
-                      <a href="#" className=" text-xl leading-[1] text-white  flex h-12 w-12 items-center justify-center">
+                      <button  className=" text-xl leading-[1] text-white  flex h-12 w-12 items-center justify-center">
                         <iconify-icon icon="bxl:facebook"></iconify-icon>
-                      </a>
+                      </button>
                     </li>
                     <li>
-                      <a href="#" className=" text-xl leading-[1] text-white flex h-12 w-12 items-center justify-center">
+                      <button  className=" text-xl leading-[1] text-white flex h-12 w-12 items-center justify-center">
                         <iconify-icon icon="bxl:twitter"></iconify-icon>
-                      </a>
+                      </button>
                     </li>
                     <li>
-                      <a href="#" className="  text-xl leading-[1]  flex h-12 w-12 items-center justify-center text-white ">
+                      <button  className="  text-xl leading-[1]  flex h-12 w-12 items-center justify-center text-white ">
                         <iconify-icon icon="bxl:linkedin"></iconify-icon>
-                      </a>
+                      </button>
                     </li>
                   </ul>
                 </div>
@@ -336,9 +337,9 @@ export default function Home() {
               </div>
               <div className="course-content p-8">
                 <h4 className=" text-xl mb-5 font-bold">
-                  <a href="/" className=" hover:text-primary transition duration-150">
+                  <Link href="/" className=" hover:text-primary transition duration-150">
                     International Art Fair 2022
-                  </a>
+                  </Link>
                 </h4>
                 <ul className=" list space-y-3 mb-6">
                   <li className=" flex space-x-2">
@@ -354,7 +355,7 @@ export default function Home() {
                     <span>Humberg City, Germany</span>
                   </li>
                 </ul>
-                <a href="/" className="btn px-8 py-[11px] bg-black text-white hover:bg-primary">Book A Seat</a>
+                <Link href="/" className="btn px-8 py-[11px] bg-black text-white hover:bg-primary">Book A Seat</Link>
               </div>
             </div>
 
@@ -364,9 +365,9 @@ export default function Home() {
               </div>
               <div className="course-content p-8">
                 <h4 className=" text-xl mb-5 font-bold">
-                  <a href="/" className=" hover:text-primary transition duration-150">
+                  <Link href="/" className=" hover:text-primary transition duration-150">
                     International Art Fair 2022
-                  </a>
+                  </Link>
                 </h4>
                 <ul className=" list space-y-3 mb-6">
                   <li className=" flex space-x-2">
@@ -382,7 +383,7 @@ export default function Home() {
                     <span>Humberg City, Germany</span>
                   </li>
                 </ul>
-                <a href="/" className="btn px-8 py-[11px] bg-black text-white hover:bg-primary">Book A Seat</a>
+                <Link href="/" className="btn px-8 py-[11px] bg-black text-white hover:bg-primary">Book A Seat</Link>
               </div>
             </div>
 
@@ -392,9 +393,9 @@ export default function Home() {
               </div>
               <div className="course-content p-8">
                 <h4 className=" text-xl mb-5 font-bold">
-                  <a href="/" className=" hover:text-primary transition duration-150">
+                  <Link href="/" className=" hover:text-primary transition duration-150">
                     International Art Fair 2022
-                  </a>
+                  </Link>
                 </h4>
                 <ul className=" list space-y-3 mb-6">
                   <li className=" flex space-x-2">
@@ -410,7 +411,7 @@ export default function Home() {
                     <span>Humberg City, Germany</span>
                   </li>
                 </ul>
-                <a href="/" className="btn px-8 py-[11px] bg-black text-white hover:bg-primary">Book A Seat</a>
+                <Link href="/" className="btn px-8 py-[11px] bg-black text-white hover:bg-primary">Book A Seat</Link>
               </div>
             </div>
 
@@ -433,7 +434,7 @@ export default function Home() {
                 <div className=" mt-6 mb-12">
                   Learn at your own pace, move the between multiple courses.
                 </div>
-                <a href="#" className="btn btn-primary">Apply Now</a>
+                <button  className="btn btn-primary">Apply Now</button>
               </div>
             </div>
             <div className="bg-[url('/images/all-img/bg-ins-2.png')]  bg-no-repeat p-10 bg-cover rounded-md">
@@ -446,7 +447,7 @@ export default function Home() {
                 <div className=" mt-6 mb-12">
                   Learn at your own pace, move the between multiple courses.
                 </div>
-                <a href="#" className="btn btn-black">Contact Us</a>
+                <button  className="btn btn-black">Contact Us</button>
               </div>
             </div>
           </div>
@@ -541,17 +542,17 @@ export default function Home() {
                     Learning</span>
                 </div>
                 <h4 className=" lg:text-2xl lg:leading-[36px] text-1xl mb-4 font-bold">
-                  <a href="/" className=" group-hover:text-primary transitio duration-150">Fashion and Luxury Fashion in a Changing</a>
+                  <Link href="/" className=" group-hover:text-primary transitio duration-150">Fashion and Luxury Fashion in a Changing</Link>
                 </h4>
                 <div className="flex   space-x-6">
-                  <a className=" flex items-center space-x-2" href="#">
+                  <button className=" flex items-center space-x-2" >
                     <img src="/images/svg/calender2.svg" alt="" />
                     <span>21 Feb, 22</span>
-                  </a>
-                  <a className=" flex items-center space-x-2" href="#">
+                  </button>
+                  <button className=" flex items-center space-x-2" >
                     <img src="/images/svg/clock2.svg" alt="" />
                     <span>4k Lesson</span>
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>
@@ -569,17 +570,17 @@ export default function Home() {
                     Learning</span>
                 </div>
                 <h4 className=" lg:text-2xl lg:leading-[36px] text-1xl mb-4 font-bold">
-                  <a href="/" className=" group-hover:text-primary transitio duration-150">Creative Writing Through Storytelling</a>
+                  <Link href="/" className=" group-hover:text-primary transitio duration-150">Creative Writing Through Storytelling</Link>
                 </h4>
                 <div className="flex   space-x-6">
-                  <a className=" flex items-center space-x-2" href="#">
+                  <button className=" flex items-center space-x-2" >
                     <img src="/images/svg/calender2.svg" alt="" />
                     <span>21 Feb, 22</span>
-                  </a>
-                  <a className=" flex items-center space-x-2" href="#">
+                  </button>
+                  <button className=" flex items-center space-x-2" >
                     <img src="/images/svg/clock2.svg" alt="" />
                     <span>4k Lesson</span>
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>
@@ -597,17 +598,17 @@ export default function Home() {
                     Learning</span>
                 </div>
                 <h4 className=" lg:text-2xl lg:leading-[36px] text-1xl mb-4 font-bold">
-                  <a href="/" className=" group-hover:text-primary transitio duration-150">Product Manager Learn The Skills &amp; Job</a>
+                  <Link href="/" className=" group-hover:text-primary transitio duration-150">Product Manager Learn The Skills &amp; Job</Link>
                 </h4>
                 <div className="flex   space-x-6">
-                  <a className=" flex items-center space-x-2" href="#">
+                  <button className=" flex items-center space-x-2" >
                     <img src="/images/svg/calender2.svg" alt="" />
                     <span>21 Feb, 22</span>
-                  </a>
-                  <a className=" flex items-center space-x-2" href="#">
+                  </button>
+                  <button className=" flex items-center space-x-2" >
                     <img src="/images/svg/clock2.svg" alt="" />
                     <span>4k Lesson</span>
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>
@@ -625,17 +626,17 @@ export default function Home() {
                     Learning</span>
                 </div>
                 <h4 className=" lg:text-2xl lg:leading-[36px] text-1xl mb-4 font-bold">
-                  <a href="/" className=" group-hover:text-primary transitio duration-150">The Power of Podcast for Storytelling</a>
+                  <Link href="/" className=" group-hover:text-primary transitio duration-150">The Power of Podcast for Storytelling</Link>
                 </h4>
                 <div className="flex   space-x-6">
-                  <a className=" flex items-center space-x-2" href="#">
+                  <Link className=" flex items-center space-x-2" >
                     <img src="/images/svg/calender2.svg" alt="" />
                     <span>21 Feb, 22</span>
-                  </a>
-                  <a className=" flex items-center space-x-2" href="#">
+                  </Link>
+                  <Link className=" flex items-center space-x-2" >
                     <img src="/images/svg/clock2.svg" alt="" />
                     <span>4k Lesson</span>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
