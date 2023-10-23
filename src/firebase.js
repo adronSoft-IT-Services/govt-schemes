@@ -18,12 +18,18 @@ const fireStore = getFirestore(app);
 // export default getFirestore(app)
 
 async function getSchemes() {
-    const q = query(collection(fireStore, "schemes"), where("isActive", "==", true));
-    const schemesCollection = await getDocs(q);
-    const allNewSchemes = schemesCollection;
-    // schemesCollection.forEach((scheme) => {
-    //     allNewSchemes.push(scheme);
-    // });
+    // const q = query(collection(fireStore, "schemes"), where("isActive", "==", true));
+    const querySnapshot = await getDocs(collection(fireStore, "schemes"));
+    const allNewSchemes = [];
+    querySnapshot.forEach((doc) => {
+        var newDoc = {
+            id: doc.id,
+            ...doc.data()
+        }
+        if (newDoc.isActive) {
+            allNewSchemes.push(newDoc);
+        }
+    });
     return { schemes: allNewSchemes, filters: AllFilters };
     // setSchemes(allNewSchemes);
 }

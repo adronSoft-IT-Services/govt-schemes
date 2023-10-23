@@ -6,10 +6,9 @@ import FilterDropdown from "@/components/AllComponents/Schemes/FilterDropdown";
 
 const SearchPage = ({ schemes, filters }) => {
 
-    const [allSchemes, setAllSchemes] = React.useState(schemes);
     const [allFilters, setAllFilters] = React.useState(filters);
 
-    const [filteredSchemes, setFilteredSchemes] = React.useState(allSchemes);
+    const [filteredSchemes, setFilteredSchemes] = React.useState(schemes);
 
     const findFilterByName = (name) => {
         return allFilters.find((filter) => filter.type === name);
@@ -52,10 +51,10 @@ const SearchPage = ({ schemes, filters }) => {
     }
 
     React.useEffect(() => {
-        console.log('allSchemes', allSchemes);
+        console.log('schemes', filteredSchemes);
         console.log('allFilters', allFilters);
         // start filtering schemes
-    }, [allFilters, allSchemes]);
+    }, [allFilters, filteredSchemes]);
 
     const filterSchemes = () => { }
     const sortSchemes = () => { }
@@ -113,7 +112,7 @@ const SearchPage = ({ schemes, filters }) => {
                         <div className="content">
                             <div className="grid grid-cols-1 gap-[30px]">
                                 {filteredSchemes.map((scheme, index) => {
-                                    return (<SchemeSummary key={index} />)
+                                    return (<SchemeSummary state={scheme?.state} title={scheme?.title} summary={scheme?.summary} key={index} />)
                                 })}
                             </div>
                             <div className="text-center pt-14">
