@@ -8,6 +8,9 @@ import React from 'react';
 // };
 // const fireApp = initializeApp(firebaseConfig);
 
+export const metadata = {
+    title: 'Govt. Schemes'
+  }
 export default function ClientRoot({ children }) {
 
     React.useEffect(() => {

@@ -11,10 +11,23 @@ import JoinWithUs from "@/components/_pages/_homepage/JoinWithUs";
 import TeamMembers from "@/components/_pages/_homepage/TeamMembers";
 // import Testimonials from "@/components/_pages/_homepage/Testimonials";
 import SchemesNavigator from "@/components/sections/SchemesNavigator";
+import Head from "next/head";
+
+export const metadata = {
+  title: 'Govt. Schemes'
+}
+export async function generateMetadata() {
+  return {
+    title: 'Govt. Schemes'
+  }
+}
 
 export default function Home() {
   return (
     <>
+      <Head>
+        <title key="title">Govt. Schemes</title>
+      </Head>
       {/* hero section */}
       <HeroSection />
 

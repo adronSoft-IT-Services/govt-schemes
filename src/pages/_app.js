@@ -4,6 +4,9 @@ import Router from "next/router";
 import React from 'react';
 import FullPageLoader from '@/components/common/FullPageLoader';
 
+export const metadata = {
+  title: 'Govt. Schemes'
+}
 export default function App({ Component, pageProps }) {
     const [loading, setLoading] = React.useState(false);
     React.useEffect(() => {

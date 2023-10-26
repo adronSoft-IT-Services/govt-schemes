@@ -3,6 +3,7 @@ import React from 'react';
 import FilterCheckbox from "@/components/AllComponents/Schemes/FilterCheckbox";
 import SchemeSummary from "@/components/AllComponents/Schemes/SchemeSummary";
 import FilterDropdown from "@/components/AllComponents/Schemes/FilterDropdown";
+import AllFilters from '@/app/filters';
 
 const SearchPage = ({ schemes, filters }) => {
 
@@ -16,7 +17,9 @@ const SearchPage = ({ schemes, filters }) => {
 
     function onChangeFilter(filterValue, filterName, isDropdown = false, isChecked = false) {
 
-        const currentFilter = findFilterByName(filterName);
+        // const currentFilter = findFilterByName(filterName);
+        const currentFilter = allFilters.find((filter) => filter.type === filterName);
+
         // console.log('findFilterByName', currentFilter)
 
         if (!isDropdown) {
@@ -51,12 +54,62 @@ const SearchPage = ({ schemes, filters }) => {
     }
 
     React.useEffect(() => {
-        console.log('schemes', filteredSchemes);
+        // console.log('filteredSchemes', filteredSchemes);
         console.log('allFilters', allFilters);
         // start filtering schemes
-    }, [allFilters, filteredSchemes]);
 
-    const filterSchemes = () => { }
+        const filterSchemes = async () => {
+            var selectedFilters = [];
+            await allFilters.map(filter => {
+                if (filter.filterType === 'dropdown' && filter.selected || filter.filterType === 'checkbox' && filter.selected.length > 0)
+                    selectedFilters.push(filter);
+            });
+
+            const schemesFiltered = [];
+            if (selectedFilters.length > 0) {
+                await schemes.map(async (scheme) => {
+                    var schemeFilterMatch = false;
+                    selectedFilters.forEach(filter => {
+                        // filter.type
+                        // filter.valueType
+                        // filter.selected
+                        // if(scheme[filter.type])
+                        // var valueTypeFuntion = null || Function;
+                        if (filter.valueType == 'String') {
+                            if (String(scheme[filter.type]) == String(filter.selected)) {
+                                schemeFilterMatch = true;
+                            }
+                        }
+                        if (filter.valueType == 'Boolean') {
+                            if (Boolean(scheme[filter.type]) == Boolean(filter.selected)) {
+                                schemeFilterMatch = true;
+                            }
+                        }
+                        if (filter.valueType == 'Number') {
+                            if (Number(scheme[filter.type]) == Number(filter.selected)) {
+                                schemeFilterMatch = true;
+                            }
+                        }
+                    })
+                    if (schemeFilterMatch) {
+                        schemesFiltered.push(scheme);
+                    }
+                });
+                setFilteredSchemes(schemesFiltered);
+            } else {
+                // reset filters
+                setAllFilters(AllFilters);
+                setFilteredSchemes(schemes);
+            }
+        }
+        filterSchemes();
+    }, [allFilters, schemes]);
+
+    function resetFilters() {
+        setAllFilters(AllFilters);
+        setFilteredSchemes(schemes);
+    }
+
     const sortSchemes = () => { }
 
     return (
